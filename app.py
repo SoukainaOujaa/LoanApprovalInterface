@@ -12,7 +12,6 @@ warnings.filterwarnings("ignore",category=DeprecationWarning)
 
 # model=pickle.load(open('first.h5','rb'))
 
-
 model=joblib.load('loan_prediction')
 
 app = Flask(__name__,template_folder='template')
