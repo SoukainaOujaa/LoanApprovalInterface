@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            /* background:url("wp6602998-banking-wallpapers.jpg"); */
+            background:url("https://images.unsplash.com/photo-1531685250784-7569952593d2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80") ;
+            background-size: 100%;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        {%if data == 0%}   
+        <h1>SORRY {{ name }}<br>YOUR LOAN IS NOT APPROVED</h1>
+    
+        {%else%}
+        <h1>WOW {{ name }}<br>YOUR LOAN IS APPROVED</h1>
+                
+
+        {%endif%}
+        <br><br>
+        <a href="/"><h2>HOME PAGE</h2></a>
+        
+    </center>
+</body>
+</html>

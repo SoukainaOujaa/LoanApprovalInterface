@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>     
+       
+*{
+    margin: 0;
+    padding : 0;
+}
+body{
+    /* background:url("wp6602889-banking-wallpapers.jpg"); */
+    /* background:url("https://images.unsplash.com/photo-1512295767273-ac109ac3acfa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=435&q=80"); */
+    background:url("https://images.unsplash.com/photo-1642092445829-891353085efc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1331&q=80");
+    background-size: 100%;
+    
+    font-family: "Pacifico", cursive;
+}
+div.main{
+    width: 550px;
+    margin: 35px auto 0px auto;
+}
+div.register{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    font-size: 20px;
+    font-style: italic;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.5);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    color:#fff; 
+}
+form#register{
+    margin: 30px;
+    
+}
+span{
+    padding-left: 80px;
+}
+p{
+    padding-left: 180px;
+}
+h2
+{
+    text-align: center;
+    padding: 20px;
+}
+#bt{
+    background-color: orange;
+    color: black;
+    height: 40px;
+    width: 90px;
+} 
+    
+</style>
+    
+</head>
+<body>
+    <div>
+
+       <h1 style="background-color: rgba(0,0,0,0.8); color:white; text-align: center;"><strong>WELCOME !</strong></h1>
+    
+</div>
+   <div class="main">
+    <div class="register">
+        <h2><center>LOAN PREDICTION</center></h2>
+    <form id="register" method="POST", action="{{url_for('home')}}">
+          
+        <label for="name">Name</label>
+          <label style="padding-left: 200px;" for="address">Address</label> <br>
+            <input  type="text" id="name" name="NAME" placeholder="Enter name">
+            <span >
+             <input type="textarea" id="address" name="ADDRESS" placeholder="Enter address"><br><br>
+            </span>
+
+        <label for="email">Email</label>
+        <label style="padding-left: 200px;" for="mobile">Mobile Number</label><br>
+        <input type="email" id="email" name="EMAIL" placeholder="Enter email">
+        <span >
+        <input type="number" id="mobile" name="MOBILE" placeholder="Enter mobile number"><br><br>
+        </span>
+
+        <label for="ap_income">Applicant Income</label>        
+        <label style="padding-left: 105px;" for="cap_income">Co-applicant Income</label><br>
+        <input type="number" id="ap_income" name="APP_INCOME" placeholder="Enter applicant income">
+        <span>
+        <input type="number" id="cap_income" name="COAPP_INCOME" placeholder="Enter co-applicant income"><br><br>
+         </span>
+
+        <label for="l_amount">Loan Amount</label>
+        <label style="padding-left: 140px;" for="l_amountt">Loan Amount Term</label><br>
+            <input type="number" id="l_amount" name="LOAN_AMOUNT" placeholder="Enter loan amount">
+            <span>
+            <input type="number" id="l_amountt" name="LA_TERM" placeholder="Enter loan amount term"><br><br>
+             </span>
+
+        <label for="c_history">Credit History : </label>
+    <select id="c_history" name="CR_HISTORY">
+            <option value="Clear">Clear</option>
+            <option value="Not clear">Not Clear</option>
+        </select>
+    
+        <label style="padding-left: 40px;" for="married">Married : </label>
+    <select id="married" name="MARRIED">
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
+        </select>
+    
+        <label for="gender"><br><br>Gender : </label>
+    <select id="gender" name="GENDER">
+            <option value="MALE">MALE</option>
+            <option value="FEMALE">FEMALE</option>
+        </select>
+
+        <label style="padding-left: 97px;" for="dependents">Dependents : </label>
+    <select id="dependents" name="DEPENDENTS"><br><br>
+            <option value="zero">0</option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three_plus">3+</option>
+        </select>
+    
+        <label for="education"><br><br>Education : </label>
+    <select id="education" name="EDUCATION">
+            <option value="Graduate">Graduate</option>
+            <option value="Not Graduate">Not Graduate</option>
+        </select>
+    
+         <label style="padding-left: 48px;" for="s_employed">Self Employed : </label>
+        <select id="s_employed" name="SELF_EMP">
+            <option value="yes">YES</option>
+            <option value="no">NO</option>
+        </select>
+        
+        <label for="property"><br><br>Property : </label>
+        <select id="s_employed" name="PROPERTY">
+            <option value="rural">Rural</option>
+            <option value="semi-urban">Semi-Urban</option>
+            <option value="urban">Urban</option>
+        </select>
+        <br><br>
+    <span style="padding-left: 200px;">
+    <input id="bt" type="submit" value="Submit">
+</span>
+    </form>
+</div>
+</div>
+</body>
+</html>

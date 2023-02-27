@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding : 0;
+    
+}
+body{
+    /* background:url("wp1925242-coder-wallpapers.png"); */
+    background:url("wp6602889-banking-wallpapers.jpg");
+    /* background:url("wp6602998-banking-wallpapers.jpg"); */
+    /* background-size: 150%;*/
+    background-position: -50px -50px;
+}
+div.main{
+    width: 550px;
+    margin: 20px auto 0px auto;
+    
+}
+div.register{
+    background-color: rgba(0,0,0,0.8);
+    width: 100%;
+    font-size: 18px;
+    font-style: italic;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.5);
+    box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+    color:#fff; 
+    
+}
+form#register{
+    margin: 30px;
+}
+span{
+    padding-left: 50px;
+}
+p{
+    padding-left: 180px;
+}
+h2
+{
+    text-align: center;
+    padding: 20px;
+}
+#bt{
+    background-color: orange;
+    color: black;
+    height: 40px;
+    width: 90px;
+}
